@@ -95,6 +95,7 @@ const ShopContextProvider = (props) => {
         }
     }
 
+
     const getCartAmount = () => {
         let totalAmount = 0;
         for(const items in cartItems) {
@@ -142,28 +143,35 @@ const ShopContextProvider = (props) => {
         } catch (error) {
             console.log(error) 
             toast.error(error.message)
-
         }
     }
 
     useEffect(() => {
     getProductData();
-    }, []); 
+    }, []);
 
-    useEffect(()=> {
-        if(!token && localStorage.getItem('token')) {
-            setToken(localStorage.getItem('item'))
-            getUserCart()
+    useEffect(() => {
+        const savedToken = localStorage.getItem('token')
+        if (savedToken) {
+            setToken(savedToken)
         }
-    },[])
+    }, [])
+
+    useEffect(() => {
+        if (token) {
+            getUserCart(token)
+        }
+    }, [token])
+
 
     const value = {
         products, currency, delivery_fee,
         search, setSearch, showSearch, setShowSearch,
-        cartItems, addToCart,
-        getCartCount,updateQuantity,
+        cartItems, addToCart, setCartItems,
+        getCartCount, updateQuantity,
         getCartAmount, navigate, backendUrl,
-        setToken,token, setCartItems
+        token, setToken
+
     }
 
     return (

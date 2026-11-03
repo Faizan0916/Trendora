@@ -1,4 +1,3 @@
-import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
@@ -13,6 +12,7 @@ import Orders from './pages/Orders'
 import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
 import { ToastContainer, toast } from 'react-toastify';
+import Verify from './pages/Verify'
 
 const App = () => {
   return (
@@ -30,6 +30,7 @@ const App = () => {
         <Route path='/login' element={<Login/>}/>
         <Route path="/place-order" element={<PlaceOrder/>}/>
         <Route path="/orders" element={<Orders/>}/>
+        <Route path='/verify' element={<Verify />} />
       </Routes>
       <Footer />
     </div>

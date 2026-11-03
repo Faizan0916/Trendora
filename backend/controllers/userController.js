@@ -3,8 +3,8 @@ import bcrypt from 'bcrypt'            // package: no .js
 import jwt from 'jsonwebtoken'         // package: no .js
 import userModel from '../models/userModel.js'   // your file: needs .js
 
-const createToken = (id) => {
-    return jwt.sign({id},process.env.JWT_SECRET)
+const createToken = (userId) => {
+    return jwt.sign({userId},process.env.JWT_SECRET)
 }
 
 // Route for user login
@@ -34,7 +34,6 @@ const loginUser = async (req, res) => {
     } catch (error) {
 
     }
-
 }
 
 // Route for user register
