@@ -8,7 +8,7 @@ import Add from './pages/Add'
 import List from './pages/List'
 import Orders from './pages/Orders'
 
-export const backendUrl = import.meta.env.VITE_BACKEND_URL
+export const backendUrl = (import.meta.env.VITE_BACKEND_URL || "").replace(/\/+$/, "")
 export const currency = '$'
 
 const App = () => {
