@@ -8,7 +8,7 @@ const Footer = () => {
             <div>
                 <img src={assets.logo} className='mb-5 w-32' alt=""/>
                 <p className='w-full md:w-2/3 text-gray-600  '>
-                    Lorem Ipsom is simply dummy text of the printing and typesetting industry
+                    Trendora brings you modern, effortless styles for every day. Quality pieces and fashion you’ll love wearing.
                 </p>
             </div>
 
@@ -25,8 +25,9 @@ const Footer = () => {
             <div>
                 <p className='text-xl font-medium mb-5'>GET IN TOUCH</p>
                 <ul className='flex flex-col gap-1 text-gray-600'>
-                    <li>+1-221-454-5436</li>
-                    <li>contact@foreveryou.com</li>
+                    <li>+917905389916</li>
+                    <li>hello@trendora.com</li>
+                    <li>Mon-Sat, 10 AM-7 PM</li>
                 </ul>
             </div>
 

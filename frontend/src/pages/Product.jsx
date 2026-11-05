@@ -84,7 +84,7 @@ const Product = () => {
           <p className='border px-5 py-3 text-sm'>Reviews (122)</p>
         </div>
         <div className='flex flex-col gap-4 border px-6 py-6 text-sm text-gray-500'>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. </p>
+          <p>At Trendora, every piece is chosen for style, comfort and everyday wear. Made with quality materials and careful stitching, it’s designed to fit well, feel great and last. Easy to style with the pieces you already own, it’s a simple way to look put together for work, weekends or any occasion.</p>
         </div>
       </div>
 
